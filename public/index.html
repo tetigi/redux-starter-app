@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<script>
+	window.process = {
+		env: {
+			NODE_ENV: 'develop'
+		}
+	};
+</script>
+<head lang='en'>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width'>
+	<title>redux-starter-app</title>
+
+	<style>
+		body {
+			font-family: 'Helvetica Neue', Arial, sans-serif;
+			color: #333;
+			font-weight: 300;
+		}
+	</style>
+</head>
+<body>
+	<h1>redux-starter-app</h1>
+    <h2>Todo:</h2>
+	<ul id="todos"></ul>
+	<input type="text" id="input" placeholder="Write something.."/>
+	<button id="add">Add</button>
+    <button id="delete">Delete Last</button>
+	<script src='bundle.js'></script>
+</body>
+</html>
